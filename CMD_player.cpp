@@ -25,6 +25,10 @@ CMD_player::CMD_player(videoStream * vs)
 	GetWindowRect(hq, &rect);
 	CONSOLE_SCREEN_BUFFER_INFO bInfo;
 	GetConsoleScreenBufferInfo(hcsb, &bInfo);
+	COORD NewSBSize;
+	NewSBSize.X = bInfo.dwMaximumWindowSize.X;
+	NewSBSize.Y = bInfo.dwMaximumWindowSize.Y;
+	SetConsoleScreenBufferSize(hcsb, NewSBSize);
 	this->pos.X = (bInfo.dwMaximumWindowSize.X - this->vs->width) / 2-1;
 	this->pos.Y = (bInfo.dwMaximumWindowSize.Y - 2*this->vs->height) / 2-1;
 	this->processpos.X = this->pos.X;

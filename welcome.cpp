@@ -24,7 +24,7 @@ welcome::welcome()
 		this->print((bInfo.dwMaximumWindowSize.X - 70) / 2 + 70, i, string(1, '/'));
 	}
 	this->print((bInfo.dwMaximumWindowSize.X - 70) / 2, (bInfo.dwMaximumWindowSize.Y - 25) / 2 + 25, string(70, '/'));
-	this->print((bInfo.dwMaximumWindowSize.X - 70) / 2 + 20, (bInfo.dwMaximumWindowSize.Y - 25) / 2 + 7, "Command Line Video Player V1.0");
+	this->print((bInfo.dwMaximumWindowSize.X - 70) / 2 + 20, (bInfo.dwMaximumWindowSize.Y - 25) / 2 + 7, "Command Line Video Player V1.1");
 	this->print((bInfo.dwMaximumWindowSize.X - 70) / 2 + 21, (bInfo.dwMaximumWindowSize.Y - 25) / 2 + 15, "拖入视频文件按回车键开始播放");
 	this->print((bInfo.dwMaximumWindowSize.X - 70) / 2 + 29, (bInfo.dwMaximumWindowSize.Y - 25) / 2 + 17, "输入exit退出");
 	this->print((bInfo.dwMaximumWindowSize.X - 70) / 2 + 22, (bInfo.dwMaximumWindowSize.Y - 25) / 2 + 19, "注意！路径中不能出现中文！");

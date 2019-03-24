@@ -33,6 +33,12 @@
     <ClInclude Include="welcome.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Audio_pocessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio_player.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -51,6 +57,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="welcome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio_pocessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio_player.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

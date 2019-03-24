@@ -6,4 +6,6 @@
 #include "FrameProsser.h"
 #include "CMD_player.h"
 #include "welcome.h"
+#include "Audio_player.h"
+#include "Audio_pocessor.h"
 #endif
