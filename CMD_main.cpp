@@ -16,9 +16,12 @@ int main()
 		string filename = url;
 		std::thread FrameProsser((FrameProsser(filename, vs)));
 		FrameProsser.detach();
-		Sleep(500);
+		std::thread AudioProsser((Audio_pocessor(filename.c_str())));
+		AudioProsser.join();
 		std::thread CMD_player((CMD_player(vs)));
-		CMD_player.join();
+		CMD_player.detach();
+		std::thread Audio_player((Audio_player()));
+		Audio_player.join();
 	}
 	
 }
